@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sign Up page</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student Management System</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Student Management System</title>
+          <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+        
+          <!-- Login Form -->
+          <div id="login" class="container">
+            <h2>Login</h2>
+            <form id="loginForm">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+              <label for="password">Password:</label>
+              <input type="password" id="password" required>
+              <button type="submit">Login</button>
+              <p>Don't have an account? <a href="#" id="goToSignup">Sign Up</a></p>
+            </form>
+          </div>
+        
+          <!-- Signup Form -->
+          <div id="signup" class="container" style="display:none;">
+            <h2>Signup</h2>
+            <form id="signupForm">
+              <label for="signupEmail">Email:</label>
+              <input type="email" id="signupEmail" required>
+              <label for="signupPassword">Password:</label>
+              <input type="password" id="signupPassword" required>
+              <label for="firstName">First Name:</label>
+              <input type="text" id="signupFirstName" required>
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="signupLastName" required>
+              <label for="cnic">CNIC:</label>
+              <input type="text" id="signupCnic" required>
+              <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="goToLogin">Login</a></p>
+          </div>
+        
+          <!-- Admin and Student Portals (hidden by default) -->
+          <!-- Admin and Student Portal HTML remain as provided earlier -->
+        
+          <script src="app.js"></script>
+        </body>
+        </html>
+        
+    
+      <!-- Admin Portal -->
+      <div id="adminPortal" class="container" style="display:none;">
+        <h2>Admin Portal</h2>
+        <button id="logoutAdmin">Logout</button>
+    
+        <!-- Add Students Section -->
+        <h3>Add Student</h3>
+        <form id="addStudentForm">
+          <input type="text" id="firstName" placeholder="First Name" required>
+          <input type="text" id="lastName" placeholder="Last Name" required>
+          <input type="email" id="studentEmail" placeholder="Email" required>
+          <input type="password" id="studentPassword" placeholder="Password" required>
+          <input type="text" id="studentCnic" placeholder="CNIC" required>
+          <input type="hidden" id="userType" value="Student">
+          <button type="submit">Add Student</button>
+        </form>
+    
+        <!-- Upload Student Marks -->
+        <h3>Upload Student Marks</h3>
+        <form id="uploadMarksForm">
+          <input type="text" id="course" placeholder="Course" required>
+          <input type="text" id="studentId" placeholder="Student ID" required>
+          <input type="number" id="marks" placeholder="Marks" required>
+          <input type="number" id="totalMarks" placeholder="Total Marks" required>
+          <input type="text" id="grade" placeholder="Grade" required>
+          <button type="submit">Upload Marks</button>
+        </form>
+      </div>
+    
+      <!-- Student Portal -->
+      <div id="studentPortal" class="container" style="display:none;">
+        <h2>Student Portal</h2>
+        <button id="logoutStudent">Logout</button>
+    
+        <!-- Edit Profile Section -->
+        <h3>Edit Profile</h3>
+        <form id="editProfileForm">
+          <input type="text" id="editFirstName" placeholder="First Name" required>
+          <input type="text" id="editLastName" placeholder="Last Name" required>
+          <input type="text" id="editCnic" placeholder="CNIC" required>
+          <button type="submit">Update Profile</button>
+        </form>
+    
+        <!-- View Result Section -->
+        <h3>View Result</h3>
+        <form id="viewResultForm">
+          <input type="text" id="resultCnic" placeholder="Enter CNIC" required>
+          <button type="submit">Get Result</button>
+        </form>
+        <div id="resultDisplay"></div>
+      </div>
+    
+      <script type="module" src="app.js"></script>
+    </body>
+    </html>
+    
+
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
